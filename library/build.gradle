@@ -1,0 +1,14 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+description = 'Delaunay Triangulation Library'
+
+jar.baseName = 'DelaunayTriangulator'
+version = '1.0.0'
+	
+jar {
+	manifest {
+		attributes 'Implementation-Title': 'Delaunay Triangulator',
+                   'Implementation-Version': version
+    }
+}
