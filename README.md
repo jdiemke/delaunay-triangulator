@@ -16,16 +16,15 @@ try {
 ```
 The constructor throws a `NotEnoughPointsException` if it is invoked with less than three points.
 ### How to build
-The Delaunay Triangulator Library uses Gradle as build tool and makes use of it's multi project build capabilities. Each subproject contains it's own build file and can be build separately. Hence you can build only the part you want. For example if you just want to build the library, then it is sufficient to type
+The Delaunay Triangulator Library uses Gradle as a build tool and makes use of its multi project build capabilities. Each subproject contains its own build file and can be build separately. Hence you can build only the part you want. For example if you just want to build the library, then it is sufficient to locate into the project's root directory and type the following command into your shell:
 ```bash
 gradle library:build
 ```
-in the projects root directory. This will cause Gradle to build the `DelaunayTriangulator-1.0.0.jar` library artefact in `library/build/libs/`. If your just want to build the example, then type:
+This will cause Gradle to build the `DelaunayTriangulator-1.0.0.jar` library artefact in `library/build/libs/`. If you just want to build the example, then type the following into your shell:
 ```bash
 gradle example:build
 ```
-This causes Gradle to build the `example.zip` and `example.tar` distribution artefacts in `example/build/distributions/`.
-In case you want to build the whole multi project then type:
+This causes Gradle to build the `example.zip` and `example.tar` distribution artifacts in `example/build/distributions/`. In case you want to build the whole multi project then type:
 ```bash
 gradle build
 ```
