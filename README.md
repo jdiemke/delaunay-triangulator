@@ -31,7 +31,9 @@ gradle build
 ```
 ### History
 ##### 2015-09-18 / Release 1.0.0
--   Minor refactoring and initial commit to GitHub.
+-   Minor refactoring
+-   Created Gradle build files
+-   Initial commit to GitHub
 
 ##### 2010-08-01 / Release 0.0.0
--   Initial implementation of the Delaunay triangulation algorithm for a strategic positioning mechanism of a robot soccer team based on a paper of Team HELIOS.
+-   Initial implementation of the Delaunay triangulation algorithm
