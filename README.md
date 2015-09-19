@@ -31,6 +31,7 @@ gradle build
 ### Dependencies
 The Delaunay triangulation library itself does not have any dependencies; however, the example subproject uses JOGL 2.3.1 for rendering a triangulated point set using OpenGL. See [http://jogamp.org/](http://jogamp.org/) for further details on JOGL.
 ### License
+The Delaunay triangulation library is protected by the very permissive MIT license. This means you can do anything you want with the code with some minor restrictions related to attribution and liability (see the license below for more details). Nevertheless it is prefered, but not necessary, that you share your enhancements concerning the project's source code.
 ```
 The MIT License (MIT)
 
@@ -55,6 +56,9 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
 ### History
+##### 2015-09-19 / Release 1.0.1
+-   Added the MIT License to the project
+
 ##### 2015-09-18 / Release 1.0.0
 -   Minor refactoring
 -   Created Gradle build files
