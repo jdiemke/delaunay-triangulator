@@ -16,7 +16,7 @@ try {
 ```
 The constructor throws a `NotEnoughPointsException` if it is invoked with less than three points.
 ### How to build
-The Delaunay triangulator library uses Gradle as a build tool and makes use of its multi project build capabilities. Each subproject contains its own build file and can be build separately. Hence you can build only the part you want. For example if you just want to build the library, then it is sufficient to locate into the project's root directory and type the following command into your shell:
+The Delaunay triangulator library uses Gradle as a build tool and makes use of its multi project build capabilities. Each subproject contains its own build file and can be build separately. Hence, you can build only the part you want. For example, if you just want to build the library, then it is sufficient to locate into the project's root directory and type the following command into your shell:
 ```bash
 gradle library:build
 ```
@@ -24,14 +24,14 @@ This will cause Gradle to build the `DelaunayTriangulator-1.0.0.jar` library art
 ```bash
 gradle example:build
 ```
-This causes Gradle to build the `example.zip` and `example.tar` distribution artifacts in `example/build/distributions/`. In case you want to build the whole multi project then type:
+This causes Gradle to build the `example.zip` and `example.tar` distribution artifacts in `example/build/distributions/`. In case you want to build the whole multi project, then type:
 ```bash
 gradle build
 ```
 ### Dependencies
 The Delaunay triangulation library itself does not have any dependencies; however, the example subproject uses JOGL 2.3.1 for rendering a triangulated point set using OpenGL. See [http://jogamp.org/](http://jogamp.org/) for further details on JOGL.
 ### License
-The Delaunay triangulation library is protected by the very permissive MIT license. This means you can do anything you want with the code with some minor restrictions related to attribution and liability (see the license below for more details). Nevertheless it is prefered, but not necessary, that you share your enhancements concerning the project's source code.
+The Delaunay triangulation library is protected by the very permissive MIT license. This means you can do anything you want with the code with some minor restrictions related to attribution and liability (see the license below for more details). Nevertheless, it is prefered, but not necessary, that you share your enhancements concerning the project's source code.
 ```
 The MIT License (MIT)
 
