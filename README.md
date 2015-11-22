@@ -28,7 +28,7 @@ This causes Gradle to build the `example.zip` and `example.tar` distribution art
 ```bash
 gradle build
 ```
-### Delauny Triangulator API Documentation
+### API Documentation
 The Delaunay triangulator API documentation can be found [here]( http://jdiemke.github.io/delaunay-triangulator/javadoc). You can also build it yourself using the javadoc Gradle task by typing the following into your shell:
 ```bash
 gradle library:javadoc
@@ -61,6 +61,9 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
 ### History
+##### 2015-11-22 / Release 1.0.2
+-   Added [project site]( http://jdiemke.github.io/delaunay-triangulator) and [Javadoc]( http://jdiemke.github.io/delaunay-triangulator/javadoc)
+
 ##### 2015-09-19 / Release 1.0.1
 -   Added the MIT License to the project
 
