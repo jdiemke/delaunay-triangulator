@@ -57,13 +57,15 @@ public class Triangle2D {
 
     /**
      * Tests if a given point lies in the circumcircle of this triangle. Let the
-     * triangle ABC appear in counterclockwise (CCW) order. Then when det > 0,
-     * the point lies inside the circumcircle through the three points a, b and
-     * c. If instead det < 0, the point lies outside the circumcircle. When det
-     * = 0, the four points are cocircular. If the triangle is oriented
+     * triangle ABC appear in counterclockwise (CCW) order. Then when det &gt;
+     * 0, the point lies inside the circumcircle through the three points a, b
+     * and c. If instead det &lt; 0, the point lies outside the circumcircle.
+     * When det = 0, the four points are cocircular. If the triangle is oriented
      * clockwise (CW) the result is reversed. See Real-Time Collision Detection,
      * chap. 3, p. 34.
      * 
+     * @param point
+     *            The point to be tested
      * @return Returns true iff the point lies inside the circumcircle through
      *         the three points a, b, and c of the triangle
      */
@@ -92,11 +94,11 @@ public class Triangle2D {
 
     /**
      * Test if this triangle is oriented counterclockwise (CCW). Let A, B and C
-     * be three 2D points. If det > 0, C lies to the left of the directed line
-     * AB. Equivalently the triangle ABC is oriented counterclockwise. When det
-     * < 0, C lies to the right of the directed line AB, and the triangle ABC is
-     * oriented clockwise. When det = 0, the three points are colinear. See
-     * Real-Time Collision Detection, chap. 3, p. 32
+     * be three 2D points. If det &gt; 0, C lies to the left of the directed
+     * line AB. Equivalently the triangle ABC is oriented counterclockwise. When
+     * det &lt; 0, C lies to the right of the directed line AB, and the triangle
+     * ABC is oriented clockwise. When det = 0, the three points are colinear.
+     * See Real-Time Collision Detection, chap. 3, p. 32
      * 
      * @return Returns true iff the triangle ABC is oriented counterclockwise
      *         (CCW)
