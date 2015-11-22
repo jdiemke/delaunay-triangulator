@@ -1,4 +1,4 @@
-## Delaunay Triangulator Library
+## A 2D Delaunay Triangulation Library for Java
 A simple and lean Java implementation of an incremental 2D Delaunay triangulation algorithm.
 ### How to use
 The code below shows how to use the `DelaunayTriangulator` class in order to triangulate a given set of points:
@@ -27,6 +27,11 @@ gradle example:build
 This causes Gradle to build the `example.zip` and `example.tar` distribution artifacts in `example/build/distributions/`. In case you want to build the whole multi project, then type:
 ```bash
 gradle build
+```
+### Delauny Triangulator API Documentation
+The Delaunay triangulator API documentation can be found [here]( http://jdiemke.github.io/delaunay-triangulator/javadoc). You can also build it yourself using the javadoc Gradle task by typing the following into your shell:
+```bash
+gradle library:javadoc
 ```
 ### Dependencies
 The Delaunay triangulation library itself does not have any dependencies; however, the example subproject uses JOGL 2.3.1 for rendering a triangulated point set using OpenGL. See [http://jogamp.org/](http://jogamp.org/) for further details on JOGL.
