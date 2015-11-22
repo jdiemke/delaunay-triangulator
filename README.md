@@ -20,7 +20,7 @@ The Delaunay triangulator library uses Gradle as a build tool and makes use of i
 ```bash
 gradle library:build
 ```
-This will cause Gradle to build the `DelaunayTriangulator-1.0.0.jar` library artifact in `library/build/libs/`. If you just want to build the example, then type the following into your shell:
+This will cause Gradle to build the `DelaunayTriangulator-1.0.2.jar` library artifact in `library/build/libs/`. If you just want to build the example, then type the following into your shell:
 ```bash
 gradle example:build
 ```
