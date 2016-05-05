@@ -1,7 +1,8 @@
 package io.github.jdiemke.triangulation;
 
+import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Vector;
+import java.util.List;
 
 /**
  * A Java implementation of an incremental 2D Delaunay triangulation algorithm.
@@ -10,7 +11,7 @@ import java.util.Vector;
  */
 public class DelaunayTriangulator {
 
-    private Vector<Vector2D> pointSet;
+    private List<Vector2D> pointSet;
     private TriangleSoup triangleSoup;
 
     /**
@@ -22,7 +23,7 @@ public class DelaunayTriangulator {
      * @throws NotEnoughPointsException
      *             Thrown when the point set contains less than three points
      */
-    public DelaunayTriangulator(Vector<Vector2D> pointSet) throws NotEnoughPointsException {
+    public DelaunayTriangulator(List<Vector2D> pointSet) throws NotEnoughPointsException {
         if (pointSet == null || pointSet.size() < 3) {
             throw new NotEnoughPointsException("Less than three points in point set.");
         }
@@ -179,7 +180,7 @@ public class DelaunayTriangulator {
      *            The permutation used to shuffle the point set
      */
     public void shuffle(int[] permutation) {
-        Vector<Vector2D> temp = new Vector<Vector2D>();
+        List<Vector2D> temp = new ArrayList<Vector2D>();
         for (int i = 0; i < permutation.length; i++) {
             temp.add(pointSet.get(permutation[i]));
         }
@@ -191,7 +192,7 @@ public class DelaunayTriangulator {
      * 
      * @return Returns the points set.
      */
-    public Vector<Vector2D> getPointSet() {
+    public List<Vector2D> getPointSet() {
         return pointSet;
     }
 
@@ -201,7 +202,7 @@ public class DelaunayTriangulator {
      * 
      * @return Returns the triangles of the triangulation.
      */
-    public Vector<Triangle2D> getTriangles() {
+    public List<Triangle2D> getTriangles() {
         return triangleSoup.getTriangles();
     }
 

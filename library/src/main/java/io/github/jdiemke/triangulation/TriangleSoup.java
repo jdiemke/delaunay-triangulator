@@ -1,7 +1,8 @@
 package io.github.jdiemke.triangulation;
 
+import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Vector;
+import java.util.List;
 
 /**
  * Triangle soup class implementation.
@@ -10,14 +11,14 @@ import java.util.Vector;
  */
 class TriangleSoup {
 
-    private Vector<Triangle2D> triangleSoup;
+    private List<Triangle2D> triangleSoup;
 
     /**
      * Constructor of the triangle soup class used to create a new triangle soup
      * instance.
      */
     public TriangleSoup() {
-        this.triangleSoup = new Vector<Triangle2D>();
+        this.triangleSoup = new ArrayList<Triangle2D>();
     }
 
     /**
@@ -45,7 +46,7 @@ class TriangleSoup {
      * 
      * @return The triangles from this triangle soup
      */
-    public Vector<Triangle2D> getTriangles() {
+    public List<Triangle2D> getTriangles() {
         return this.triangleSoup;
     }
 
@@ -115,14 +116,14 @@ class TriangleSoup {
      * @return The edge from the triangle soup nearest to the specified point
      */
     public Edge2D findNearestEdge(Vector2D point) {
-        Vector<EdgeDistancePack> edgeVector = new Vector<EdgeDistancePack>();
+        List<EdgeDistancePack> edgeList = new ArrayList<EdgeDistancePack>();
 
         for (Triangle2D triangle : triangleSoup) {
-            edgeVector.add(triangle.findNearestEdge(point));
+            edgeList.add(triangle.findNearestEdge(point));
         }
 
-        EdgeDistancePack[] edgeDistancePacks = new EdgeDistancePack[edgeVector.size()];
-        edgeVector.toArray(edgeDistancePacks);
+        EdgeDistancePack[] edgeDistancePacks = new EdgeDistancePack[edgeList.size()];
+        edgeList.toArray(edgeDistancePacks);
 
         Arrays.sort(edgeDistancePacks);
         return edgeDistancePacks[0].edge;
@@ -136,7 +137,7 @@ class TriangleSoup {
      *            The vertex
      */
     public void removeTrianglesUsing(Vector2D vertex) {
-        Vector<Triangle2D> trianglesToBeRemoved = new Vector<Triangle2D>();
+        List<Triangle2D> trianglesToBeRemoved = new ArrayList<Triangle2D>();
 
         for (Triangle2D triangle : triangleSoup) {
             if (triangle.hasVertex(vertex)) {

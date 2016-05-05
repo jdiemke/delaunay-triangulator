@@ -28,13 +28,7 @@ public class EdgeDistancePack implements Comparable<EdgeDistancePack> {
 
     @Override
     public int compareTo(EdgeDistancePack o) {
-        if (o.distance == distance) {
-            return 0;
-        } else if (o.distance < distance) {
-            return 1;
-        } else {
-            return -1;
-        }
+        return Double.compare(this.distance, o.distance);
     }
 
 }
