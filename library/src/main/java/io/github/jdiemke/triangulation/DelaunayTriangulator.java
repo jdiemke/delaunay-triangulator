@@ -23,10 +23,7 @@ public class DelaunayTriangulator {
      * @throws NotEnoughPointsException
      *             Thrown when the point set contains less than three points
      */
-    public DelaunayTriangulator(List<Vector2D> pointSet) throws NotEnoughPointsException {
-        if (pointSet == null || pointSet.size() < 3) {
-            throw new NotEnoughPointsException("Less than three points in point set.");
-        }
+    public DelaunayTriangulator(List<Vector2D> pointSet) {
         this.pointSet = pointSet;
         this.triangleSoup = new TriangleSoup();
     }
@@ -34,9 +31,15 @@ public class DelaunayTriangulator {
     /**
      * This method generates a Delaunay triangulation from the specified point
      * set.
+     * 
+     * @throws NotEnoughPointsException
      */
-    public void triangulate() {
+    public void triangulate() throws NotEnoughPointsException {
         triangleSoup = new TriangleSoup();
+
+        if (pointSet == null || pointSet.size() < 3) {
+            throw new NotEnoughPointsException("Less than three points in point set.");
+        }
 
         /**
          * In order for the in circumcircle test to not consider the vertices of
