@@ -3,7 +3,7 @@ apply plugin: 'application'
 apply plugin: 'eclipse'
  
 description = 'Delaunay Triangulation Example'
-mainClassName = 'io.github.jdiemke.triangulation.ExampleDelaunayTriangulation';
+mainClassName = 'DelaunayTriangulationExample';
 
 repositories {
 	mavenCentral()
