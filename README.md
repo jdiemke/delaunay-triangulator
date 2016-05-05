@@ -62,6 +62,9 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
 ### History
+##### 2016-05-05 / Release 1.0.3
+-   Changed coding style guides (all indentation should be done with 4 space characters from now on)
+
 ##### 2015-11-22 / Release 1.0.2
 -   Added [project site](http://jdiemke.github.io/delaunay-triangulator) and [Javadoc](http://jdiemke.github.io/delaunay-triangulator/javadoc)
 
