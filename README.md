@@ -63,6 +63,7 @@ SOFTWARE.
 ```
 ### History
 ##### 2016-05-05 / Release 1.0.3
+-   Adjusted the example application to incorporate user interaction (adding points by clicking in the window)
 -   Changed coding style guides (all indentation should be done with 4 space characters from now on)
 -   The Delaunay triangulation library now uses the List interfaces in order to decouple client code from using a specific implementation for providing a list of 2d points 
 
