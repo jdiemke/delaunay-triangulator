@@ -19,8 +19,8 @@ public class Vector2D {
      *            The y coordinate of the new vector
      */
     public Vector2D(double x, double y) {
-	this.x = x;
-	this.y = y;
+        this.x = x;
+        this.y = y;
     }
 
     /**
@@ -31,7 +31,7 @@ public class Vector2D {
      * @return A new instance holding the result of the vector subtraction
      */
     public Vector2D sub(Vector2D vector) {
-	return new Vector2D(this.x - vector.x, this.y - vector.y);
+        return new Vector2D(this.x - vector.x, this.y - vector.y);
     }
 
     /**
@@ -42,7 +42,7 @@ public class Vector2D {
      * @return A new instance holding the result of the vector addition
      */
     public Vector2D add(Vector2D vector) {
-	return new Vector2D(this.x + vector.x, this.y + vector.y);
+        return new Vector2D(this.x + vector.x, this.y + vector.y);
     }
 
     /**
@@ -53,7 +53,7 @@ public class Vector2D {
      * @return A new instance holding the result of the multiplication
      */
     public Vector2D mult(double scalar) {
-	return new Vector2D(this.x * scalar, this.y * scalar);
+        return new Vector2D(this.x * scalar, this.y * scalar);
     }
 
     /**
@@ -62,7 +62,7 @@ public class Vector2D {
      * @return The magnitude of this
      */
     public double mag() {
-	return Math.sqrt(this.x * this.x + this.y * this.y);
+        return Math.sqrt(this.x * this.x + this.y * this.y);
     }
 
     /**
@@ -73,7 +73,7 @@ public class Vector2D {
      * @return A new instance holding the result of the multiplication
      */
     public double dot(Vector2D vector) {
-	return this.x * vector.x + this.y * vector.y;
+        return this.x * vector.x + this.y * vector.y;
     }
 
     /**
@@ -86,12 +86,12 @@ public class Vector2D {
      * @return A new instance holding the result of the pseudo cross product
      */
     public double cross(Vector2D vector) {
-	return this.y * vector.x - this.x * vector.y;
+        return this.y * vector.x - this.x * vector.y;
     }
 
     @Override
     public String toString() {
-	return "Vector2D[" + x + ", " + y + "]";
+        return "Vector2D[" + x + ", " + y + "]";
     }
 
 }

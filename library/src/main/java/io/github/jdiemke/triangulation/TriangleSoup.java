@@ -17,7 +17,7 @@ class TriangleSoup {
      * instance.
      */
     public TriangleSoup() {
-	this.triangleSoup = new Vector<Triangle2D>();
+        this.triangleSoup = new Vector<Triangle2D>();
     }
 
     /**
@@ -27,7 +27,7 @@ class TriangleSoup {
      *            The triangle to be added to this triangle soup
      */
     public void add(Triangle2D triangle) {
-	this.triangleSoup.add(triangle);
+        this.triangleSoup.add(triangle);
     }
 
     /**
@@ -37,7 +37,7 @@ class TriangleSoup {
      *            The triangle to be removed from this triangle soup
      */
     public void remove(Triangle2D triangle) {
-	this.triangleSoup.remove(triangle);
+        this.triangleSoup.remove(triangle);
     }
 
     /**
@@ -46,7 +46,7 @@ class TriangleSoup {
      * @return The triangles from this triangle soup
      */
     public Vector<Triangle2D> getTriangles() {
-	return this.triangleSoup;
+        return this.triangleSoup;
     }
 
     /**
@@ -59,12 +59,12 @@ class TriangleSoup {
      *         specified point or null
      */
     public Triangle2D findContainingTriangle(Vector2D point) {
-	for (Triangle2D triangle : triangleSoup) {
-	    if (triangle.contains(point)) {
-		return triangle;
-	    }
-	}
-	return null;
+        for (Triangle2D triangle : triangleSoup) {
+            if (triangle.contains(point)) {
+                return triangle;
+            }
+        }
+        return null;
     }
 
     /**
@@ -80,12 +80,12 @@ class TriangleSoup {
      *         no triangle exists
      */
     public Triangle2D findNeighbour(Triangle2D triangle, Edge2D edge) {
-	for (Triangle2D triangleFromSoup : triangleSoup) {
-	    if (triangleFromSoup.isNeighbour(edge) && triangleFromSoup != triangle) {
-		return triangleFromSoup;
-	    }
-	}
-	return null;
+        for (Triangle2D triangleFromSoup : triangleSoup) {
+            if (triangleFromSoup.isNeighbour(edge) && triangleFromSoup != triangle) {
+                return triangleFromSoup;
+            }
+        }
+        return null;
     }
 
     /**
@@ -99,12 +99,12 @@ class TriangleSoup {
      * @return Returns one triangle that shares the specified edge
      */
     public Triangle2D findOneTriangleSharing(Edge2D edge) {
-	for (Triangle2D triangle : triangleSoup) {
-	    if (triangle.isNeighbour(edge)) {
-		return triangle;
-	    }
-	}
-	return null;
+        for (Triangle2D triangle : triangleSoup) {
+            if (triangle.isNeighbour(edge)) {
+                return triangle;
+            }
+        }
+        return null;
     }
 
     /**
@@ -115,17 +115,17 @@ class TriangleSoup {
      * @return The edge from the triangle soup nearest to the specified point
      */
     public Edge2D findNearestEdge(Vector2D point) {
-	Vector<EdgeDistancePack> edgeVector = new Vector<EdgeDistancePack>();
+        Vector<EdgeDistancePack> edgeVector = new Vector<EdgeDistancePack>();
 
-	for (Triangle2D triangle : triangleSoup) {
-	    edgeVector.add(triangle.findNearestEdge(point));
-	}
+        for (Triangle2D triangle : triangleSoup) {
+            edgeVector.add(triangle.findNearestEdge(point));
+        }
 
-	EdgeDistancePack[] edgeDistancePacks = new EdgeDistancePack[edgeVector.size()];
-	edgeVector.toArray(edgeDistancePacks);
+        EdgeDistancePack[] edgeDistancePacks = new EdgeDistancePack[edgeVector.size()];
+        edgeVector.toArray(edgeDistancePacks);
 
-	Arrays.sort(edgeDistancePacks);
-	return edgeDistancePacks[0].edge;
+        Arrays.sort(edgeDistancePacks);
+        return edgeDistancePacks[0].edge;
     }
 
     /**
@@ -136,15 +136,15 @@ class TriangleSoup {
      *            The vertex
      */
     public void removeTrianglesUsing(Vector2D vertex) {
-	Vector<Triangle2D> trianglesToBeRemoved = new Vector<Triangle2D>();
+        Vector<Triangle2D> trianglesToBeRemoved = new Vector<Triangle2D>();
 
-	for (Triangle2D triangle : triangleSoup) {
-	    if (triangle.hasVertex(vertex)) {
-		trianglesToBeRemoved.add(triangle);
-	    }
-	}
+        for (Triangle2D triangle : triangleSoup) {
+            if (triangle.hasVertex(vertex)) {
+                trianglesToBeRemoved.add(triangle);
+            }
+        }
 
-	triangleSoup.removeAll(trianglesToBeRemoved);
+        triangleSoup.removeAll(trianglesToBeRemoved);
     }
 
 }

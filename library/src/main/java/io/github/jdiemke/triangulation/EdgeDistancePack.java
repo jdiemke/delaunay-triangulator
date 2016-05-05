@@ -22,19 +22,19 @@ public class EdgeDistancePack implements Comparable<EdgeDistancePack> {
      *            The distance of the edge to some point
      */
     public EdgeDistancePack(Edge2D edge, double distance) {
-	this.edge = edge;
-	this.distance = distance;
+        this.edge = edge;
+        this.distance = distance;
     }
 
     @Override
     public int compareTo(EdgeDistancePack o) {
-	if (o.distance == distance) {
-	    return 0;
-	} else if (o.distance < distance) {
-	    return 1;
-	} else {
-	    return -1;
-	}
+        if (o.distance == distance) {
+            return 0;
+        } else if (o.distance < distance) {
+            return 1;
+        } else {
+            return -1;
+        }
     }
 
 }

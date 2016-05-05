@@ -20,8 +20,8 @@ public class Edge2D {
      *            The second vertex of the edge
      */
     public Edge2D(Vector2D a, Vector2D b) {
-	this.a = a;
-	this.b = b;
+        this.a = a;
+        this.b = b;
     }
 
 }
