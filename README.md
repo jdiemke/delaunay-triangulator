@@ -1,5 +1,10 @@
 ## A 2D Delaunay Triangulation Library for Java
 A simple and lean Java implementation of an incremental 2D Delaunay triangulation algorithm.
+### How to get
+Type the following command into your shell:
+```bash
+git clone https://github.com/jdiemke/delaunay-triangulator.git
+```
 ### How to use
 The code below shows how to use the `DelaunayTriangulator` class in order to triangulate a given set of points:
 ```java
