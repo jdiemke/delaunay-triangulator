@@ -41,7 +41,7 @@ gradle library:javadoc
 ```
 This causes Gradle to build the javadoc API documentation artifacts in `library/build/docs/javadoc`.
 ### Dependencies
-The Delaunay triangulation library itself does not have any dependencies; however, the example subproject uses JOGL 2.3.1 for rendering a triangulated point set using OpenGL. See [http://jogamp.org/](http://jogamp.org/) for further details on JOGL.
+The Delaunay triangulation library itself does not have any dependencies; however, the example subproject uses JOGL 2.3.2 for rendering a triangulated point set using OpenGL. See [http://jogamp.org/](http://jogamp.org/) for further details on JOGL.
 ### Demo Application
 ![demo screenshot](https://raw.githubusercontent.com/jdiemke/delaunay-triangulator/master/images/example_application.png "Demo Application")
 ### License
