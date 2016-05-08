@@ -43,6 +43,8 @@ This causes Gradle to build the javadoc API documentation artifacts in `library/
 ### Dependencies
 The Delaunay triangulation library itself does not have any dependencies; however, the example subproject uses JOGL 2.3.2 for rendering a triangulated point set using OpenGL. See [http://jogamp.org/](http://jogamp.org/) for further details on JOGL.
 ### Demo Application
+The screenshot below shows the demo application from the example project. In order to create a Delaunay triangulation you have to add points to the canvas by pressing the left mouse button. You need at least 3 points for the triangulation to be created.
+
 ![demo screenshot](https://raw.githubusercontent.com/jdiemke/delaunay-triangulator/master/images/example_application.png "Demo Application")
 ### License
 The Delaunay triangulation library is protected by the very permissive MIT license. This means you can do anything you want with the code with some minor restrictions related to attribution and liability (see the license below for more details). Nevertheless, it is prefered, but not necessary, that you share your enhancements concerning the project's source code.
