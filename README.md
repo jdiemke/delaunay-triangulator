@@ -1,14 +1,14 @@
 ## A 2D Delaunay Triangulation Library for Java
 A simple and lean Java implementation of an incremental 2D Delaunay triangulation algorithm.
 ### Table of contents
--   [How to get](#How to get)
--   [How to use](#How to use)
--   [How to build](#How to build)
--   [API Documentation](#API Documentation)
--   [Dependencies](#Dependencies)
--   [Demo Application](#Demo Application)
--   [License](#License)
--   [History](#History)
+-   [How to get](#how-to-get)
+-   [How to use](#how-to-use)
+-   [How to build](#how-to-build)
+-   [API Documentation](#api-documentation)
+-   [Dependencies](#dependencies)
+-   [Demo Application](#demo-application)
+-   [License](#license)
+-   [History](#history)
 
 ### How to get
 Type the following command into your shell:
