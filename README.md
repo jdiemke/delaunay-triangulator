@@ -85,6 +85,10 @@ SOFTWARE.
 ### References
 1.  <a name="paper1"></a>L. J. Guibas, D. E. Knuth and M. Sharir. Randomized incremental construction of Delaunay and Voronoi diagrams. Algorithmica 7 (1992), 381-413
 2.  <a name="paper2"></a>T. Ottmann. Algorithmische Geometrie SS 99: Delaunay Triangulation (1999), Source: http://www.tzi.de/~edelkamp/lectures/ml/slides/delaunay.pdf
+3.  http://www.cs.uu.nl/docs/vakken/ga/slides9alt.pdf
+4.  http://www.uni-forst.gwdg.de/~wkurth/cb/html/xlpr/xl1_delaun.pdf
+5.  http://www.iwr.uni-heidelberg.de/groups/CoVis/Teaching/AG_SS12/AG_8_Delaunay.pdf
+6.  https://en.wikipedia.org/wiki/Delaunay_triangulation
 
 ### History
 ##### 2016-05-05 / Release 1.0.3
