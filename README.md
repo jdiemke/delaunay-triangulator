@@ -107,5 +107,5 @@ SOFTWARE.
 -   Initial implementation of the Delaunay triangulation algorithm
 
 ### TODO
--   Add an interface Locatable in order to be able to use custom classes as long as the interface is implemented. The interface defines a getLocation() method that returns a point in 2d space.
--   Use generics in order to have type safety.
+-   [ ] Add an interface Locatable in order to be able to use custom classes as long as the interface is implemented. The interface defines a getLocation() method that returns a point in 2d space.
+-   [ ] Use generics in order to have type safety.
