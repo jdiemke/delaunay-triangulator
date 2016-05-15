@@ -1,5 +1,5 @@
 ## A 2D Delaunay Triangulation Library for Java
-###Abstract:
+### Abstract
 A simple and lean Java implementation of an incremental 2D Delaunay triangulation algorithm.
 ### Table of contents
 -   [Introduction](#introduction)
@@ -96,7 +96,7 @@ SOFTWARE.
 
 ### History
 ##### 2016-05-16 / Release 1.0.4
--   Added Unit Tests
+-   Added JUnit
 -   Added a reference section to the README
 
 ##### 2016-05-05 / Release 1.0.3
@@ -120,6 +120,5 @@ SOFTWARE.
 -   Initial implementation of the Delaunay triangulation algorithm
 
 ### TODO
--   [x] Add JUnit tests
 -   [ ] Add an interface Locatable in order to be able to use custom classes as long as the interface is implemented. The interface defines a getLocation() method that returns a point in 2d space.
 -   [ ] Use generics in order to have type safety.
