@@ -1,5 +1,5 @@
 ## A 2D Delaunay Triangulation Library for Java
-A simple and lean Java implementation of an incremental 2D Delaunay triangulation algorithm.
+A simple and lean Java implementation of an incremental 2D Delaunay triangulation algorithm [[1]](#paper).
 ### Table of contents
 -   [How to get](#how-to-get)
 -   [How to use](#how-to-use)
@@ -83,7 +83,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
 ### References
-- Ottmann, Th. (1999), Algorithmische Geometrie SS 99: Delaunay Triangulation, Source: http://www.tzi.de/~edelkamp/lectures/ml/slides/delaunay.pdf
+-   <a name="paper"></a>Ottmann, Th. (1999), Algorithmische Geometrie SS 99: Delaunay Triangulation, Source: http://www.tzi.de/~edelkamp/lectures/ml/slides/delaunay.pdf
 
 ### History
 ##### 2016-05-05 / Release 1.0.3
