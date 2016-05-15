@@ -1,6 +1,8 @@
 ## A 2D Delaunay Triangulation Library for Java
-A simple and lean Java implementation of an incremental 2D Delaunay triangulation algorithm [[1]](#paper2)[[2]](#paper2).
+###Abstract:
+A simple and lean Java implementation of an incremental 2D Delaunay triangulation algorithm.
 ### Table of contents
+-   [Introduction](#introduction)
 -   [How to get](#how-to-get)
 -   [How to use](#how-to-use)
 -   [How to build](#how-to-build)
@@ -11,6 +13,8 @@ A simple and lean Java implementation of an incremental 2D Delaunay triangulatio
 -   [References](#references)
 -   [History](#history)
 
+### Introduction
+The library is an implementation of the algorithm described in [[4]](#paper4). The algorithm was first proposed in [[1]](#paper1).
 ### How to get
 Type the following command into your shell:
 ```bash
@@ -85,12 +89,16 @@ SOFTWARE.
 ### References
 1.  <a name="paper1"></a>L. J. Guibas, D. E. Knuth and M. Sharir. Randomized incremental construction of Delaunay and Voronoi diagrams. Algorithmica 7 (1992), 381-413
 2.  <a name="paper2"></a>T. Ottmann. Algorithmische Geometrie SS 99: Delaunay Triangulation (1999), Source: http://www.tzi.de/~edelkamp/lectures/ml/slides/delaunay.pdf
-3.  http://www.cs.uu.nl/docs/vakken/ga/slides9alt.pdf
-4.  http://www.uni-forst.gwdg.de/~wkurth/cb/html/xlpr/xl1_delaun.pdf
-5.  http://www.iwr.uni-heidelberg.de/groups/CoVis/Teaching/AG_SS12/AG_8_Delaunay.pdf
-6.  https://en.wikipedia.org/wiki/Delaunay_triangulation
+3.  <a name="paper3"></a>http://www.cs.uu.nl/docs/vakken/ga/slides9alt.pdf
+4.  <a name="paper4"></a>http://www.uni-forst.gwdg.de/~wkurth/cb/html/xlpr/xl1_delaun.pdf
+5.  <a name="paper5"></a>http://www.iwr.uni-heidelberg.de/groups/CoVis/Teaching/AG_SS12/AG_8_Delaunay.pdf
+6.  <a name="paper6"></a>https://en.wikipedia.org/wiki/Delaunay_triangulation
 
 ### History
+##### 2016-05-16 / Release 1.0.4
+-   Added Unit Tests
+-   Added a reference section to the README
+
 ##### 2016-05-05 / Release 1.0.3
 -   Adjusted dependencies from JOGL 2.3.1 to JOGL 2.3.2
 -   Adjusted the example application to incorporate user interaction (adding points by clicking in the window)
@@ -112,5 +120,6 @@ SOFTWARE.
 -   Initial implementation of the Delaunay triangulation algorithm
 
 ### TODO
+-   [x] Add JUnit tests
 -   [ ] Add an interface Locatable in order to be able to use custom classes as long as the interface is implemented. The interface defines a getLocation() method that returns a point in 2d space.
 -   [ ] Use generics in order to have type safety.
