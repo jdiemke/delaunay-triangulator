@@ -83,7 +83,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
 ### References
--   <a name="paper"></a>Ottmann, Th. (1999), Algorithmische Geometrie SS 99: Delaunay Triangulation, Source: http://www.tzi.de/~edelkamp/lectures/ml/slides/delaunay.pdf
+1.  <a name="paper"></a>Ottmann, Th. (1999), Algorithmische Geometrie SS 99: Delaunay Triangulation, Source: http://www.tzi.de/~edelkamp/lectures/ml/slides/delaunay.pdf
 
 ### History
 ##### 2016-05-05 / Release 1.0.3
