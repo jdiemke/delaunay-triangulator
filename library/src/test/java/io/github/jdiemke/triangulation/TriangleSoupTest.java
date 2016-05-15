@@ -8,7 +8,7 @@ import org.junit.Test;
 public class TriangleSoupTest {
 
     @Test
-    public void testThatTriangleSoupIsInitialyEmpty() {
+    public void testThatTriangleSoupIsInitiallyEmpty() {
         TriangleSoup soup = new TriangleSoup();
         List<Triangle2D> triangles = soup.getTriangles();
 
