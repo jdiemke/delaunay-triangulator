@@ -8,6 +8,7 @@ A simple and lean Java implementation of an incremental 2D Delaunay triangulatio
 -   [Dependencies](#dependencies)
 -   [Demo Application](#demo-application)
 -   [License](#license)
+-   [References](#references)
 -   [History](#history)
 
 ### How to get
