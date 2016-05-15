@@ -1,4 +1,4 @@
-rootProject.name = 'Delaunay Triangulation'
+rootProject.name = 'Delaunay Triangulator'
 
 include 'example'
 include 'library'

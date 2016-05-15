@@ -1,6 +1,15 @@
 apply plugin: 'java'
 apply plugin: 'eclipse'
 
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+  testCompile 'org.jmockit:jmockit:1.8'
+  testCompile 'junit:junit:4.12'
+}
+
 description = 'Delaunay Triangulation Library'
 
 jar.baseName = 'DelaunayTriangulator'
