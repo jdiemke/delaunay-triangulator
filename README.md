@@ -81,6 +81,9 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
+### References
+- Ottmann, Th. (1999), Algorithmische Geometrie SS 99: Delaunay Triangulation, Source: http://www.tzi.de/~edelkamp/lectures/ml/slides/delaunay.pdf
+
 ### History
 ##### 2016-05-05 / Release 1.0.3
 -   Adjusted dependencies from JOGL 2.3.1 to JOGL 2.3.2
