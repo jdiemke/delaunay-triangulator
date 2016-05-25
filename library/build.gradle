@@ -1,17 +1,17 @@
-apply plugin: 'java'
-apply plugin: 'eclipse'
-apply plugin: 'coveralls'
-apply plugin: 'jacoco'
-
 buildscript {
     repositories {
         mavenCentral()
     }
  
     dependencies {
-        classpath 'org.kt3k.gradle.plugin:coveralls-gradle-plugin:0.3.0'
+				classpath 'org.kt3k.gradle.plugin:coveralls-gradle-plugin:2.0.1'
     }
 }
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'jacoco'
+apply plugin: 'com.github.kt3k.coveralls'
 
 jacocoTestReport {
     reports {
