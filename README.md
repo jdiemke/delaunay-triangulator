@@ -1,7 +1,9 @@
 ## A 2D Delaunay Triangulation Library for Java
-### Abstract
+##### Abstract
 A simple and lean Java implementation of an incremental 2D Delaunay triangulation algorithm.
-### Table of contents
+##### Build Status
+[![Build Status](https://travis-ci.org/jdiemke/delaunay-triangulator.svg?branch=master)](https://travis-ci.org/jdiemke/delaunay-triangulator)
+### Table of Contents
 -   [Introduction](#introduction)
 -   [How to get](#how-to-get)
 -   [How to use](#how-to-use)
