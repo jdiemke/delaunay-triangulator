@@ -23,6 +23,19 @@ Type the following command into your shell:
 git clone https://github.com/jdiemke/delaunay-triangulator.git
 ```
 This will create a copy of the repository in your current working directory.
+### What's included
+Within the download you'll find the following directories and files. You'll see something like this:
+```
+delaunay-triangulator/
+├── library/
+├── example/
+├── images/
+├── LICENSE
+├── README.md
+├── .travis.yml
+├── settings.gradle
+└── build.gradle
+```
 ### How to use
 The code below shows how to use the `DelaunayTriangulator` class in order to triangulate a given set of points:
 ```java
