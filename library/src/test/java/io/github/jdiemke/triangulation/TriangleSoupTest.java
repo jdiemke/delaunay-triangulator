@@ -28,4 +28,18 @@ public class TriangleSoupTest {
         Assert.assertEquals("The triangle soup should contain exactly one triangle.", 1, triangles.size());
     }
 
+    @Test
+    public void testRemoveTriangle() {
+        TriangleSoup soup = new TriangleSoup();
+        Triangle2D triangle = new Triangle2D(new Vector2D(0, 0), new Vector2D(1, 0), new Vector2D(1, 1));
+
+        soup.add(triangle);
+        soup.remove(triangle);
+
+        List<Triangle2D> triangles = soup.getTriangles();
+
+        Assert.assertNotNull("The returned list should not be null.", triangles);
+        Assert.assertEquals("The triangle soup should not contain any triangles.", 0, triangles.size());
+    }
+
 }
