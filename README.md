@@ -2,7 +2,7 @@
 ### Abstract
 A simple and lean Java implementation of an incremental 2D Delaunay triangulation algorithm.
 
-[![GitHub version](https://badge.fury.io/gh/jdiemke%2Fdelaunay-triangulator.svg)](https://badge.fury.io/gh/jdiemke%2Fdelaunay-triangulator) [![Build Status](https://travis-ci.org/jdiemke/delaunay-triangulator.svg?branch=master)](https://travis-ci.org/jdiemke/delaunay-triangulator) [![Coverage Status](https://coveralls.io/repos/github/jdiemke/delaunay-triangulator/badge.svg?branch=master)](https://coveralls.io/github/jdiemke/delaunay-triangulator?branch=master)
+[![GitHub version](https://badge.fury.io/gh/jdiemke%2Fdelaunay-triangulator.svg)](https://badge.fury.io/gh/jdiemke%2Fdelaunay-triangulator) [![Build Status](https://travis-ci.org/jdiemke/delaunay-triangulator.svg?branch=master)](https://travis-ci.org/jdiemke/delaunay-triangulator) [![Coverage Status](https://coveralls.io/repos/github/jdiemke/delaunay-triangulator/badge.svg?branch=master)](https://coveralls.io/github/jdiemke/delaunay-triangulator?branch=master) [![Code Climate](https://codeclimate.com/github/jdiemke/delaunay-triangulator/badges/gpa.svg)](https://codeclimate.com/github/jdiemke/delaunay-triangulator)
 ### Table of Contents
 -   [Introduction](#introduction)
 -   [How to get](#how-to-get)
