@@ -1,8 +1,15 @@
 ## A 2D Delaunay Triangulation Library for Java
-### Abstract
+[![GitHub version](https://badge.fury.io/gh/jdiemke%2Fdelaunay-triangulator.svg)](https://badge.fury.io/gh/jdiemke%2Fdelaunay-triangulator)
+[![Build Status](https://travis-ci.org/jdiemke/delaunay-triangulator.svg?branch=master)](https://travis-ci.org/jdiemke/delaunay-triangulator)
+[![Coverage Status](https://coveralls.io/repos/github/jdiemke/delaunay-triangulator/badge.svg?branch=master)](https://coveralls.io/github/jdiemke/delaunay-triangulator?branch=master)
+[![GitHub stars](https://img.shields.io/github/stars/jdiemke/delaunay-triangulator.svg)](https://github.com/jdiemke/delaunay-triangulator/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/jdiemke/delaunay-triangulator.svg)](https://github.com/jdiemke/delaunay-triangulator/network)
+[![GitHub issues](https://img.shields.io/github/issues/jdiemke/delaunay-triangulator.svg)](https://github.com/jdiemke/delaunay-triangulator/issues)
+[![GitHub license](https://img.shields.io/github/license/jdiemke/delaunay-triangulator.svg)](https://github.com/jdiemke/delaunay-triangulator/blob/master/LICENSE)
+[![Twitter](https://img.shields.io/twitter/url/https/github.com/jdiemke/delaunay-triangulator.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fjdiemke%2Fdelaunay-triangulator)
+
 A simple and lean Java implementation of an incremental 2D Delaunay triangulation algorithm.
 
-[![GitHub version](https://badge.fury.io/gh/jdiemke%2Fdelaunay-triangulator.svg)](https://badge.fury.io/gh/jdiemke%2Fdelaunay-triangulator) [![Build Status](https://travis-ci.org/jdiemke/delaunay-triangulator.svg?branch=master)](https://travis-ci.org/jdiemke/delaunay-triangulator) [![Coverage Status](https://coveralls.io/repos/github/jdiemke/delaunay-triangulator/badge.svg?branch=master)](https://coveralls.io/github/jdiemke/delaunay-triangulator?branch=master) [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/hyperium/hyper/master/LICENSE)
 ### Table of Contents
 -   [Introduction](#introduction)
 -   [How to get](#how-to-get)
