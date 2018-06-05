@@ -1,6 +1,6 @@
 ## A 2D Delaunay Triangulation Library for Java
-[![GitHub version](https://badge.fury.io/gh/jdiemke%2Fdelaunay-triangulator.svg)](https://badge.fury.io/gh/jdiemke%2Fdelaunay-triangulator)
 [![Build Status](https://travis-ci.org/jdiemke/delaunay-triangulator.svg?branch=master)](https://travis-ci.org/jdiemke/delaunay-triangulator)
+[![GitHub release](https://img.shields.io/github/release/jdiemke/delaunay-triangulator.svg)](https://github.com/jdiemke/delaunay-triangulator/releases)
 [![Gitter chat](https://badges.gitter.im/delaunay-triangulator.png)](https://gitter.im/delaunay-triangulator)
 [![Coverage Status](https://coveralls.io/repos/github/jdiemke/delaunay-triangulator/badge.svg?branch=master)](https://coveralls.io/github/jdiemke/delaunay-triangulator?branch=master)
 [![GitHub stars](https://img.shields.io/github/stars/jdiemke/delaunay-triangulator.svg)](https://github.com/jdiemke/delaunay-triangulator/stargazers)
