@@ -4,11 +4,12 @@ buildscript {
     }
  
     dependencies {
-				classpath 'org.kt3k.gradle.plugin:coveralls-gradle-plugin:2.0.1'
+                classpath 'org.kt3k.gradle.plugin:coveralls-gradle-plugin:2.0.1'
     }
 }
 
 apply plugin: 'java'
+apply plugin: 'maven'
 apply plugin: 'eclipse'
 apply plugin: 'jacoco'
 apply plugin: 'com.github.kt3k.coveralls'
@@ -31,12 +32,26 @@ dependencies {
 
 description = 'Delaunay Triangulation Library'
 
-jar.baseName = 'DelaunayTriangulator'
+group = 'io.github.jdiemke'
+jar.baseName = 'delaunay-triangulation'
 version = '1.0.3'
-	
+
 jar {
-	manifest {
-		attributes 'Implementation-Title': 'Delaunay Triangulator',
+    manifest {
+        attributes 'Implementation-Title': 'Delaunay Triangulator',
                    'Implementation-Version': version
     }
+}
+
+task packageJavadoc(type: Jar, dependsOn: 'javadoc') {
+    from javadoc.destinationDir
+    classifier = 'javadoc'
+}
+task packageSources(type: Jar, dependsOn: 'classes') {
+    from sourceSets.main.allSource
+    classifier = 'sources'
+}
+artifacts {
+    archives packageJavadoc
+    archives packageSources
 }
