@@ -18,10 +18,7 @@ public class DelaunayTriangulator {
      * Constructor of the SimpleDelaunayTriangulator class used to create a new
      * triangulator instance.
      * 
-     * @param pointSet
-     *            The point set to be triangulated
-     * @throws NotEnoughPointsException
-     *             Thrown when the point set contains less than three points
+     * @param pointSet The point set to be triangulated
      */
     public DelaunayTriangulator(List<Vector2D> pointSet) {
         this.pointSet = pointSet;
@@ -32,7 +29,7 @@ public class DelaunayTriangulator {
      * This method generates a Delaunay triangulation from the specified point
      * set.
      * 
-     * @throws NotEnoughPointsException
+     * @throws NotEnoughPointsException Thrown when the point set contains less than three points
      */
     public void triangulate() throws NotEnoughPointsException {
         triangleSoup = new TriangleSoup();
