@@ -6,11 +6,11 @@ description = 'Delaunay Triangulation Example'
 mainClassName = 'DelaunayTriangulationExample';
 
 repositories {
-	mavenCentral()
+    mavenCentral()
 }
  
 dependencies {
-	compile project(':library')
-	compile 'org.jogamp.gluegen:gluegen-rt-main:2.3.2'
-	compile 'org.jogamp.jogl:jogl-all-main:2.3.2'
+    compile project(':library')
+    compile 'org.jogamp.gluegen:gluegen-rt-main:2.3.2'
+    compile 'org.jogamp.jogl:jogl-all-main:2.3.2'
 }
