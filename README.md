@@ -12,6 +12,7 @@ A simple and lean Java implementation of an incremental 2D Delaunay triangulatio
 
 ### Table of Contents
 -   [Introduction](#introduction)
+-   [Projects using the Delaunay Triangulation Library](#projects-using-the-delaunay-triangulation-library)
 -   [How to get](#how-to-get)
 -   [How to use](#how-to-use)
 -   [How to build](#how-to-build)
@@ -24,25 +25,18 @@ A simple and lean Java implementation of an incremental 2D Delaunay triangulatio
 
 ### Introduction
 The library is an implementation of the algorithm described in [[4]](#paper4). The algorithm was first proposed in [[1]](#paper1).
+### Projects using the Delaunay Triangulation Library
+-   [Trianglify](https://github.com/mdg-iitr/trianglify)
+-   [Design and Implementation of the JCA Electronics Autonomous Sonar Mapping Boat](http://ece.eng.umanitoba.ca/undergraduate/ECE4600/ECE4600/Archive/2017/G03_FinalReport.pdf)
+-   [Transfer Function Widget for Tri-Modal Volume Exploration](https://www.cg.tuwien.ac.at/research/publications/2018/Melo_2018_11/Melo_2018_11-Bachelor%20Thesis.pdf)
+-   [Vergleich von Algorithmen zur Platzierung disjunkter Boxen](https://www.fernuni-hagen.de/ti/download/pierstorf_april2017_masterthesis.pdf)
+-   [Generierung von Saalplanbildern mithilfe von Clustering und Algorithmen zur Erstellung konkaver Hüllen](https://www.cg.tuwien.ac.at/research/publications/2018/Deutsch-2018/Deutsch-2018-Bachelor%20Thesis.pdf)
 ### How to get
 Type the following command into your shell:
 ```bash
 git clone https://github.com/jdiemke/delaunay-triangulator.git
 ```
 This will create a copy of the repository in your current working directory.
-### What's included
-Within the download you'll find the following directories and files. You'll see something like this:
-```
-delaunay-triangulator/
-├── library/
-├── example/
-├── images/
-├── LICENSE
-├── README.md
-├── .travis.yml
-├── settings.gradle
-└── build.gradle
-```
 ### How to use
 The code below shows how to use the `DelaunayTriangulator` class in order to triangulate a given set of points:
 ```java
@@ -83,11 +77,6 @@ The Delaunay triangulation library itself does not have any dependencies; howeve
 The screenshot below shows the demo application from the example project. In order to create a Delaunay triangulation you have to add points to the canvas by pressing the left mouse button. You need at least 3 points for the triangulation to be created.
 
 ![demo screenshot](https://raw.githubusercontent.com/jdiemke/delaunay-triangulator/master/images/example_application.png "Demo Application")
-### Projects using the Delaunay Triangulation Library
--   [Transfer Function Widget for Tri-Modal Volume Exploration](https://www.cg.tuwien.ac.at/research/publications/2018/Melo_2018_11/Melo_2018_11-Bachelor%20Thesis.pdf)
--   [Vergleich von Algorithmen zur Platzierung disjunkter Boxen](https://www.fernuni-hagen.de/ti/download/pierstorf_april2017_masterthesis.pdf)
--   [Generierung von Saalplanbildern mithilfe von Clustering und Algorithmen zur Erstellung konkaver Hüllen](https://www.cg.tuwien.ac.at/research/publications/2018/Deutsch-2018/Deutsch-2018-Bachelor%20Thesis.pdf)
-
 ### License
 The Delaunay triangulation library is protected by the very permissive MIT license. This means you can do anything you want with the code with some minor restrictions related to attribution and liability (see the license below for more details). Nevertheless, it is prefered, but not necessary, that you share your enhancements concerning the project's source code.
 ```
