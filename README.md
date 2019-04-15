@@ -29,6 +29,7 @@ The library is an implementation of the algorithm described in [[4]](#paper4). T
 -   [Trianglify](https://github.com/mdg-iitr/trianglify)
 -   [Design and Implementation of the JCA Electronics Autonomous Sonar Mapping Boat](http://ece.eng.umanitoba.ca/undergraduate/ECE4600/ECE4600/Archive/2017/G03_FinalReport.pdf)
 -   [Transfer Function Widget for Tri-Modal Volume Exploration](https://www.cg.tuwien.ac.at/research/publications/2018/Melo_2018_11/Melo_2018_11-Bachelor%20Thesis.pdf)
+-   [3D Terrain Visualization](https://github.com/CRtree/3D-terrain-visualization)
 -   [Vergleich von Algorithmen zur Platzierung disjunkter Boxen](https://www.fernuni-hagen.de/ti/download/pierstorf_april2017_masterthesis.pdf)
 -   [Generierung von Saalplanbildern mithilfe von Clustering und Algorithmen zur Erstellung konkaver Hüllen](https://www.cg.tuwien.ac.at/research/publications/2018/Deutsch-2018/Deutsch-2018-Bachelor%20Thesis.pdf)
 ### How to get
