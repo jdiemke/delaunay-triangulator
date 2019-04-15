@@ -83,6 +83,11 @@ The Delaunay triangulation library itself does not have any dependencies; howeve
 The screenshot below shows the demo application from the example project. In order to create a Delaunay triangulation you have to add points to the canvas by pressing the left mouse button. You need at least 3 points for the triangulation to be created.
 
 ![demo screenshot](https://raw.githubusercontent.com/jdiemke/delaunay-triangulator/master/images/example_application.png "Demo Application")
+### Projects using the Delaunay Triangulation Library
+-   [Transfer Function Widget for Tri-Modal Volume Exploration](https://www.cg.tuwien.ac.at/research/publications/2018/Melo_2018_11/Melo_2018_11-Bachelor%20Thesis.pdf)
+-   [Vergleich von Algorithmen zur Platzierung disjunkter Boxen](https://www.fernuni-hagen.de/ti/download/pierstorf_april2017_masterthesis.pdf)
+-   [Generierung von Saalplanbildern mithilfe von Clustering und Algorithmen zur Erstellung konkaver Hüllen](https://www.cg.tuwien.ac.at/research/publications/2018/Deutsch-2018/Deutsch-2018-Bachelor%20Thesis.pdf)
+
 ### License
 The Delaunay triangulation library is protected by the very permissive MIT license. This means you can do anything you want with the code with some minor restrictions related to attribution and liability (see the license below for more details). Nevertheless, it is prefered, but not necessary, that you share your enhancements concerning the project's source code.
 ```
