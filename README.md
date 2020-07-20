@@ -33,6 +33,7 @@ The library is an implementation of the algorithm described in [[4]](#paper4). T
 -   [Vergleich von Algorithmen zur Platzierung disjunkter Boxen](https://www.fernuni-hagen.de/ti/download/pierstorf_april2017_masterthesis.pdf)
 -   [Generierung von Saalplanbildern mithilfe von Clustering und Algorithmen zur Erstellung konkaver Hüllen](https://www.cg.tuwien.ac.at/research/publications/2018/Deutsch-2018/Deutsch-2018-Bachelor%20Thesis.pdf)
 -   https://github.com/SquidPony/SquidLib
+-   https://www.cg.tuwien.ac.at/research/publications/2018/Deutsch-2018/Deutsch-2018-Bachelor%20Thesis.pdf
 ### How to get
 Type the following command into your shell:
 ```bash
@@ -40,6 +41,18 @@ git clone https://github.com/jdiemke/delaunay-triangulator.git
 ```
 This will create a copy of the repository in your current working directory.
 ### How to use
+Maven Dependency:
+```
+<dependency>
+    <groupId>com.github.jdiemke.delaunay-triangulator</groupId>
+    <artifactId>DelaunayTriangulator</artifactId>
+    <version>1.0.0</version>
+</dependency>
+```
+Gradle Dependency:
+```
+compile group: 'com.github.jdiemke.delaunay-triangulator', name: 'DelaunayTriangulator', version: '1.0.0'
+```
 The code below shows how to use the `DelaunayTriangulator` class in order to triangulate a given set of points:
 ```java
 try {
