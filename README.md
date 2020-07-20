@@ -32,6 +32,7 @@ The library is an implementation of the algorithm described in [[4]](#paper4). T
 -   [3D Terrain Visualization](https://github.com/CRtree/3D-terrain-visualization)
 -   [Vergleich von Algorithmen zur Platzierung disjunkter Boxen](https://www.fernuni-hagen.de/ti/download/pierstorf_april2017_masterthesis.pdf)
 -   [Generierung von Saalplanbildern mithilfe von Clustering und Algorithmen zur Erstellung konkaver Hüllen](https://www.cg.tuwien.ac.at/research/publications/2018/Deutsch-2018/Deutsch-2018-Bachelor%20Thesis.pdf)
+-   https://github.com/SquidPony/SquidLib
 ### How to get
 Type the following command into your shell:
 ```bash
