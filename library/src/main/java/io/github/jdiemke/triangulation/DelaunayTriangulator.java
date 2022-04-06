@@ -44,19 +44,33 @@ public class DelaunayTriangulator {
          * containing the whole point set. We have to scale the super triangle
          * to be very large. Otherwise the triangulation is not convex.
          */
-        double maxOfAnyCoordinate = 0.0d;
+        DelaunayVector point = pointSet.get(0);
+        double maxOfAnyCoordinateX = point.x;
+        double maxOfAnyCoordinateY = point.y;
+        double minOfAnyCoordinateX = point.x;
+        double minOfAnyCoordinateY = point.y;
 
-        for (Vector2D vector : getPointSet()) {
-            maxOfAnyCoordinate = Math.max(Math.max(vector.x, vector.y), maxOfAnyCoordinate);
+        for (DelaunayVector vector : getPointSet()) {
+            maxOfAnyCoordinateX = Math.max(vector.x, maxOfAnyCoordinateX);
+            maxOfAnyCoordinateY = Math.max(vector.y, maxOfAnyCoordinateY);
+            minOfAnyCoordinateX = Math.min(vector.x, minOfAnyCoordinateX);
+            minOfAnyCoordinateY = Math.min(vector.y, minOfAnyCoordinateY);
         }
+        
+        int padding = 50;
+        maxOfAnyCoordinateX += padding;
+        maxOfAnyCoordinateY += padding;
+        minOfAnyCoordinateX -= padding;
+        minOfAnyCoordinateY -= padding;
+        
+        double deltaX = maxOfAnyCoordinateX - minOfAnyCoordinateX;
+        double deltaY = maxOfAnyCoordinateY - minOfAnyCoordinateY;
 
-        maxOfAnyCoordinate *= 16.0d;
+        DelaunayVector p1 = new DelaunayVector(minOfAnyCoordinateX, minOfAnyCoordinateY);
+        DelaunayVector p2 = new DelaunayVector(minOfAnyCoordinateX, maxOfAnyCoordinateY + deltaX);
+        DelaunayVector p3 = new DelaunayVector(maxOfAnyCoordinateX + deltaY, minOfAnyCoordinateY);
 
-        Vector2D p1 = new Vector2D(0.0d, 3.0d * maxOfAnyCoordinate);
-        Vector2D p2 = new Vector2D(3.0d * maxOfAnyCoordinate, 0.0d);
-        Vector2D p3 = new Vector2D(-3.0d * maxOfAnyCoordinate, -3.0d * maxOfAnyCoordinate);
-
-        Triangle2D superTriangle = new Triangle2D(p1, p2, p3);
+        DelaunayTriangle superTriangle = new DelaunayTriangle(p1, p2, p3);
 
         triangleSoup.add(superTriangle);
 
