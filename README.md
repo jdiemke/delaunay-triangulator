@@ -26,6 +26,7 @@ A simple and lean Java implementation of an incremental 2D Delaunay triangulatio
 ### Introduction
 The library is an implementation of the algorithm described in [[4]](#paper4). The algorithm was first proposed in [[1]](#paper1).
 ### Projects using the Delaunay Triangulation Library
+-   [FundUS - The digsite analysis tool for paleolithic archaeology](https://github.com/SelinaAndrews/FundUS)
 -   [Trianglify](https://github.com/mdg-iitr/trianglify)
 -   [Design and Implementation of the JCA Electronics Autonomous Sonar Mapping Boat](http://ece.eng.umanitoba.ca/undergraduate/ECE4600/ECE4600/Archive/2017/G03_FinalReport.pdf)
 -   [Transfer Function Widget for Tri-Modal Volume Exploration](https://www.cg.tuwien.ac.at/research/publications/2018/Melo_2018_11/Melo_2018_11-Bachelor%20Thesis.pdf)
